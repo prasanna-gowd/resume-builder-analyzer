@@ -6,6 +6,8 @@ import ResumePreview from './builder/ResumePreview';
 import { templates } from './builder/templates';
 import { listBuilderResumes, saveBuilderResume, deleteBuilderResume, downloadBuilderPDF, improveText } from '../services/api';
 
+const STEPS = ['Template', 'Personal', 'Education', 'Experience', 'Skills', 'Projects', 'Certifications'];
+
 const INITIAL = {
   personal: { name: '', title: '', email: '', phone: '', linkedin: '', github: '', location: '', summary: '' },
   education: [{ institution: '', degree: '', field: '', startDate: '', endDate: '', gpa: '' }],
