@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
+import Sidebar from './components/Sidebar';
+import AnalysisTab from './components/AnalysisTab';
+import InterviewTab from './components/InterviewTab';
+import HistoryTab from './components/HistoryTab';
+import ReportTab from './components/ReportTab';
+import BuilderTab from './components/BuilderTab';
 import api, { fetchHistory, analyzeResume, matchJobDescription, downloadReport } from './services/api';
 import Toast, { createToast } from './components/Toast';
-
 export default function App() {
   // ---- State ----
   const [activeTab, setActiveTab] = useState('analysis');
