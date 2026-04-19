@@ -1,0 +1,10 @@
+node_modules/
+__pycache__/
+venv/
+.env
+dist/
+.DS_Store
+*.pyc
+history.json
+builder_resumes.json
+
